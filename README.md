@@ -4,9 +4,11 @@
 
 **List Items One by One: A New Data Source and Learning Paradigm for Multimodal LLMs** [[Paper](https://arxiv.org/abs/xxx)] [[HF Model](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] <br>
 
+
 ## :fire: News
 
 * [04/23] Models and datasets of SoM-LLaVA are released!
+
 
 ## :scroll: Contents
 - [Results](#bar_chart-results)
@@ -15,6 +17,7 @@
 - [Showcases](#dango-showcases)
 - [Training](#mushroom-training)
 - [Using SoM](#snowflake-notes-for-using-SoM)
+
 
 ## :bar_chart: Results
 <table>
@@ -66,7 +69,6 @@
 </table>
 
 ## :seedling: SoM Dataset 
-
 [[Training data for SoM-LLaVA](https://huggingface.co/datasets/zzxslp/SoM-LLaVA)]
 
 som_llava_mix695k.json: Full SFT data with llava-665k + SoM-30k
@@ -87,6 +89,7 @@ Two additional models for ablation study:
 
 [[SoM-LLaVA-v1.5-13B-qa](https://huggingface.co/zzxslp/som-llava-v1.5-13b-qa)]
 
+
 ## :dango: Showcases
 <p align="center">
   <img src="examples/case1.png" width="80%"/>
@@ -98,6 +101,7 @@ Two additional models for ablation study:
   <img src="examples/list1.png" width="80%"/>
 </p>
 
+
 ## :mushroom: Training
 We adopt the training code of [LLaVA](https://github.com/haotian-liu/LLaVA). Please set up environments following the instructions.
 
@@ -105,8 +109,8 @@ After downloading our data (or preparing your own SoM data), train SoM-LLaVA via
 
 `bash scripts/v1_5/finetune.sh`
 
-## :snowflake: Notes for using SoM
 
+## :snowflake: Notes for using SoM
 * Init virtual envs
 
 ```bash
@@ -162,13 +166,14 @@ sh download_ckpt.sh
 python annotate_coco.py
 ```
 
+
 ## :beers: Acknowledgments
-This project is built on top of [LLaVA](https://github.com/haotian-liu/LLaVA) and [SoM](https://github.com/microsoft/SoM). Thank authors for their contributions to the community!
+This project is  a collaborative work between UC San Diego and Microsoft GenAI, built on top of [LLaVA](https://github.com/haotian-liu/LLaVA) and [SoM](https://github.com/microsoft/SoM). Thank the authors for their contributions to the community!
 
 
-<!-- ## Citation
+## Citation
 
 If you find our data or model useful for your research and applications, please cite our paper:
 
 ```
-``` -->
+```
