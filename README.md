@@ -9,12 +9,12 @@
 * [04/23] Models and datasets of SoM-LLaVA are released!
 
 ## :scroll: Contents
-- [Results](#results)
+- [Results](#:bar_chart:-results)
 - [Dataset](#dataset)
 - [Model Weights](#model-checkpoints)
 - [Showcases](#showcases)
 - [Training](#training)
-- [Using SoM](#Notes-for-using-SoM)
+- [Using SoM](#notes-for-using-SoM)
 
 ## :bar_chart: Results
 <table>
@@ -65,7 +65,7 @@
     </tr>
 </table>
 
-## :seedling: Dataset 
+## :seedling: SoM Dataset 
 
 [[Training data for SoM-LLaVA](https://huggingface.co/datasets/zzxslp/SoM-LLaVA)]
 
@@ -98,14 +98,14 @@ Two additional models for ablation study:
   <img src="examples/list1.png" width="80%"/>
 </p>
 
-## :coffee: Training
+## :stew: Training
 We adopt the training code of [LLaVA](https://github.com/haotian-liu/LLaVA). Please set up environments following the instructions.
 
 After downloading our data (or preparing your own SoM data), train SoM-LLaVA via command line: 
 
 `bash scripts/v1_5/finetune.sh`
 
-## :snowflake: Notes for using SoM
+## Notes for using SoM
 
 * Init virtual envs
 
