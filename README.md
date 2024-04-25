@@ -10,7 +10,7 @@
 
 ## :scroll: Contents
 - [Results](#bar_chart-results)
-- [Dataset](#seedling-dataset)
+- [Dataset](#seedling-SoM-dataset)
 - [Model Weights](#cake-model-checkpoints)
 - [Showcases](#dango-showcases)
 - [Training](#mushroom-training)
@@ -98,7 +98,7 @@ Two additional models for ablation study:
   <img src="examples/list1.png" width="80%"/>
 </p>
 
-## :horse_racing: Training
+## :mushroom: Training
 We adopt the training code of [LLaVA](https://github.com/haotian-liu/LLaVA). Please set up environments following the instructions.
 
 After downloading our data (or preparing your own SoM data), train SoM-LLaVA via command line: 
