@@ -171,7 +171,7 @@ python annotate_coco.py
 This project is  a collaborative work between UC San Diego and Microsoft GenAI, built on top of [LLaVA](https://github.com/haotian-liu/LLaVA) and [SoM](https://github.com/microsoft/SoM). Thank the authors for their contributions to the community!
 
 
-## Citation
+## :cat: Citation
 
 If you find our data or model useful for your research and applications, please cite our paper:
 
