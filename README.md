@@ -89,13 +89,13 @@ Two additional models for ablation study:
 
 ## :dango: Showcases
 <p align="center">
-  <img src="examples/case1.pdf" width="80%"/>
+  <img src="examples/case1.png" width="80%"/>
 </p>
 <p align="center">
-  <img src="examples/case2.pdf" width="80%"/>
+  <img src="examples/case2.png" width="80%"/>
 </p>
 <p align="center">
-  <img src="examples/list1.pdf" width="80%"/>
+  <img src="examples/list1.png" width="80%"/>
 </p>
 
 ## :coffee: Training
