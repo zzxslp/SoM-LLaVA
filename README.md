@@ -127,7 +127,7 @@ After downloading all of them, organize the data as follows in your data folder.
 
 ```
 ├── coco
-│  	├── train2017
+│   ├── train2017
 │   └── som_train2017
 ├── gqa
 │   └── images
