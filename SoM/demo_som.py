@@ -40,7 +40,7 @@ build args
 semsam_cfg = "configs/semantic_sam_only_sa-1b_swinL.yaml"
 seem_cfg = "configs/seem_focall_unicl_lang_v1.yaml"
 
-model_dir = "/home/abc/checkpoints/"
+model_dir = "~/checkpoints/"
 semsam_ckpt = model_dir+"swinl_only_sam_many2many.pth"
 sam_ckpt = model_dir+"sam_vit_h_4b8939.pth"
 seem_ckpt = model_dir+"seem_focall_v1.pt"

@@ -111,7 +111,9 @@ After downloading our data (or preparing your own SoM data), train SoM-LLaVA via
 `bash scripts/v1_5/finetune.sh`
 
 
-## :snowflake: Notes for using SoM
+## :snowflake: Using SoM
+**Note:** Our implementaion is improved over the original SoM repo, by removing overlapping regions for each mask (otherwise there will be confilicts/overlaps for tag positions).
+
 * Init virtual envs
 
 ```bash
