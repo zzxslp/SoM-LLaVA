@@ -50,24 +50,26 @@
         <td>35.4</td>
     </tr>
     <tr>
-        <td>SoM-LLaVA-1.5</td>
+        <td><b>SoM-LLaVA-1.5<b></td>
         <td>Vicuna-13B</td>
-        <td><u>86.6</u></td>
-        <td><u>1563.1</u></td>
+        <td><ins>86.6</ins></td>
+        <td><ins>1563.1</ins></td>
         <td><b>69.6</b></td>
         <td><b>75.3</b></td>
-        <td><u>35.9</u></td>
+        <td><ins>35.9</ins></td>
     </tr>
     <tr>
-        <td>SoM-LLaVA-1.5 w/ tag</td>
+        <td><b>SoM-LLaVA-1.5 w/ tags<b></td>
         <td>Vicuna-13B</td>
         <td><b>87.0</b></td>
         <td><b>1572.8</b></td>
-        <td><b>69.5</b></td>
-        <td><u>73.3</u></td>
+        <td><ins>69.5</ins></td>
+        <td><ins>73.3</ins></td>
         <td><b>37.2</b></td>
     </tr>
 </table>
+
+:mega: **Note:** We get 1% to 6% relative improvements on all benchmarks, by simply adding 30k SoM data to the visual instruction tuning stage of LLaVA. SoM-LLaVA-1.5 w/ tags is to feed the model with tagged images, but you can enjoy the performance gain even without the extra tags at test time!
 
 ## :seedling: SoM Dataset 
 [[Training data for SoM-LLaVA](https://huggingface.co/datasets/zzxslp/SoM-LLaVA)]
