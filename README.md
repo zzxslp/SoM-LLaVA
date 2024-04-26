@@ -1,5 +1,5 @@
 # :pencil: List Items One by One: A New Data Source and Learning Paradigm for Multimodal LLMs
-*Empowering Multimodal LLMs with Set-of-Mark Prompting and Improved Visual Reasoning Ability.*
+*Empowering Open-Source Multimodal LLMs with Set-of-Mark Prompting and Improved Visual Reasoning Ability.*
 
 
 **List Items One by One: A New Data Source and Learning Paradigm for Multimodal LLMs** [[Paper](https://arxiv.org/abs/2404.16375)] [[HF Model](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] <br>
@@ -141,6 +141,7 @@ After downloading all of them, organize the data as follows in your data folder.
 ```
 
 2. Training
+
 After downloading our data (or preparing your own SoM data), train SoM-LLaVA via command line: 
 
 `bash scripts/v1_5/finetune.sh`
