@@ -2,12 +2,12 @@
 *Empowering Multimodal LLMs with Set-of-Mark Prompting and Improved Visual Reasoning Ability.*
 
 
-**List Items One by One: A New Data Source and Learning Paradigm for Multimodal LLMs** [[Paper](https://arxiv.org/abs/xxx)] [[HF Model](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] <br>
+**List Items One by One: A New Data Source and Learning Paradigm for Multimodal LLMs** [[Paper](https://arxiv.org/abs/2404.16375)] [[HF Model](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] <br>
 
 
 ## :fire: News
-
-* [04/23] Models and datasets of SoM-LLaVA are released!
+* [04/25] Our paper is on arxiv! [[Paper](https://arxiv.org/abs/2404.16375)]
+* [04/23] Models and datasets of SoM-LLaVA are released! [[HF Model](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] [[Dataset](https://huggingface.co/datasets/zzxslp/SoM-LLaVA)] 
 
 
 ## :scroll: Contents
@@ -166,14 +166,20 @@ sh download_ckpt.sh
 python annotate_coco.py
 ```
 
-
-## :beers: Acknowledgments
-This project is  a collaborative work between UC San Diego and Microsoft GenAI, built on top of [LLaVA](https://github.com/haotian-liu/LLaVA) and [SoM](https://github.com/microsoft/SoM). Thank the authors for their contributions to the community!
-
-
 ## :cat: Citation
 
 If you find our data or model useful for your research and applications, please cite our paper:
 
 ```
+@article{yan2024list,
+  title={List Items One by One: A New Data Source and Learning Paradigm for Multimodal LLMs},
+  author={Yan, An and Yang, Zhengyuan and Wu, Junda and Zhu, Wanrong and Yang, Jianwei and Li, Linjie and Lin, Kevin and Wang, Jianfeng and McAuley, Julian and Gao, Jianfeng and Wang, Lijuan},
+  journal={arXiv preprint arXiv:2404.16375},
+  year={2024}
+}
 ```
+
+
+## :beers: Acknowledgments
+This project is  a collaborative work between UC San Diego and Microsoft GenAI, built on top of [LLaVA](https://github.com/haotian-liu/LLaVA) and [SoM](https://github.com/microsoft/SoM). Thank the authors for their contributions to the community!
+
