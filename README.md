@@ -4,6 +4,7 @@
 
 **List Items One by One: A New Data Source and Learning Paradigm for Multimodal LLMs** [[Paper](https://arxiv.org/abs/2404.16375)] [[HF Model](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] <br>
 
+:mega: **Note:** Our new dataset is complementary to existing training sources, add it to your train set and boost your multimodal LLMs with Set-of-Mark prompting and improved general capacity! No cost at inference time!
 
 ## :fire: News
 * [04/25] Our paper is on arxiv! [[Paper](https://arxiv.org/abs/2404.16375)]
