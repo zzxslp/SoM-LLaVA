@@ -133,8 +133,9 @@ sudo apt-get install libgeos-c1v5 libgeos-dev
 * Install segmentation packages
 
 ```bash
-# dir to SoM repo
-cd ~/vlm/SoM/
+# download repo and navigate to SoM folder
+git clone https://github.com/zzxslp/SoM-LLaVA.git
+cd ~/SoM-LLaVA/SoM/
 
 # install PyTorch
 pip3 install torch torchvision torchaudio
@@ -151,7 +152,7 @@ cd ops && sh make.sh && cd ..
 # common error fix:
 python -m pip install 'git+https://github.com/MaureenZOU/detectron2-xyz.git'
 
-# install my packages
+# install additional packages
 pip install datasets
 ```
 
