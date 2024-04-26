@@ -7,6 +7,7 @@
 :mega: **Note:** Our new dataset is complementary to existing training sources, add it to your train set and boost your multimodal LLMs with Set-of-Mark prompting and improved general capacity! No cost at inference time!
 
 ## :fire: News
+* [04/26] Thanks [AK](https://x.com/_akhaliq/status/1783715007366099318) and [HF daily papers](https://huggingface.co/papers) for featuring our work!
 * [04/25] Our paper is on arxiv! [[Paper](https://arxiv.org/abs/2404.16375)]
 * [04/23] Models and datasets of SoM-LLaVA are released! [[HF Model](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] [[Dataset](https://huggingface.co/datasets/zzxslp/SoM-LLaVA)] 
 
@@ -80,6 +81,8 @@ som_listing_coco10k.json: listing all items with SoM images.
 
 som_qa_coco20k.json: QA with SoM images. (Note: QA used the same 10k images from listing, with another batch of 10k added.)
 
+som_train2017.zip: A subset of 20k coco images that is annotated with SoM, used in our data construction.
+
 
 ## :cake: Model Checkpoints
 We release our main model, SoM-LLaVA trained with LLaVA-665k and SoM-style Listing + QA data.
@@ -106,8 +109,38 @@ Two additional models for ablation study:
 
 
 ## :mushroom: Training
-We adopt the training code of [LLaVA](https://github.com/haotian-liu/LLaVA). Please set up environments following the instructions.
+We adopt the training code of [LLaVA](https://github.com/haotian-liu/LLaVA). Please set up environments following the instructions. Currently our data is used in the Visual Instruction Tuning stage.
 
+1. Prepare data
+
+Please download the annotation of the final mixture our instruction tuning data [som_llava_mix695k.json
+](https://huggingface.co/datasets/zzxslp/SoM-LLaVA/resolve/main/som_llava_mix695k.json), and download the images from constituting datasets:
+
+- COCO: [train2017](http://images.cocodataset.org/zips/train2017.zip)
+- COCO: [som_train2017](https://huggingface.co/datasets/zzxslp/SoM-LLaVA/resolve/main/som_train2017.zip)
+- GQA: [images](https://downloads.cs.stanford.edu/nlp/data/gqa/images.zip)
+- OCR-VQA: [download script](https://drive.google.com/drive/folders/1_GYPY5UkUy7HIcR0zq3ZCFgeZN7BAfm_?usp=sharing), **we save all files as `.jpg`**
+- TextVQA: [train_val_images](https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip)
+- VisualGenome: [part1](https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip), [part2](https://cs.stanford.edu/people/rak248/VG_100K_2/images2.zip)
+
+After downloading all of them, organize the data as follows in your data folder.
+
+```
+├── coco
+│  	├── train2017
+│   └── som_train2017
+├── gqa
+│   └── images
+├── ocr_vqa
+│   └── images
+├── textvqa
+│   └── train_images
+└── vg
+    ├── VG_100K
+    └── VG_100K_2
+```
+
+2. Training
 After downloading our data (or preparing your own SoM data), train SoM-LLaVA via command line: 
 
 `bash scripts/v1_5/finetune.sh`
