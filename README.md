@@ -213,7 +213,7 @@ If you find our data or model useful for your research and applications, please 
 ```
 @article{yan2024list,
   title={List Items One by One: A New Data Source and Learning Paradigm for Multimodal LLMs},
-  author={Yan, An and Yang, Zhengyuan and Wu, Junda and Zhu, Wanrong and Yang, Jianwei and Li, Linjie and Lin, Kevin and Wang, Jianfeng and McAuley, Julian and Gao, Jianfeng and Wang, Lijuan},
+  author={Yan, An and Yang, Zhengyuan and Wu, Junda and Zhu, Wanrong and Yang, Jianwei and Li, Linjie and Lin, Kevin and Wang, Jianfeng and McAuley, Julian and Gao, Jianfeng and others},
   journal={arXiv preprint arXiv:2404.16375},
   year={2024}
 }
