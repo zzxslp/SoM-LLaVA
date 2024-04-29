@@ -148,7 +148,7 @@ After downloading our data (or preparing your own SoM data), train SoM-LLaVA via
 
 
 ## :snowflake: Using SoM
-**Note:** Our implementaion is improved over the original SoM repo, by removing overlapping regions for each mask (otherwise there will be confilicts/overlaps for tag positions).
+**Note:** Our implementation is improved over the original SoM repo, by removing overlapping regions for each mask (otherwise there will be confilicts/overlaps for tag positions).
 
 * Init virtual envs
 
