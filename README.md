@@ -19,6 +19,7 @@
 - [Showcases](#dango-showcases)
 - [Training](#mushroom-training)
 - [Using SoM](#snowflake-notes-for-using-SoM)
+- [LLaVA on Huggingface](#blush-using-llava-in-hf)
 
 
 ## :bar_chart: Results
@@ -87,7 +88,9 @@ som_train2017.zip: A subset of 20k coco images that is annotated with SoM, used 
 ## :cake: Model Checkpoints
 We release our main model, SoM-LLaVA trained with LLaVA-665k and SoM-style Listing + QA data.
 
-[[SoM-LLaVA-v1.5-13B](https://huggingface.co/zzxslp/som-llava-v1.5-13b)]
+[[SoM-LLaVA-v1.5-13B](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] (model weights in original LLaVA format, load and eval with [LLaVA](https://github.com/haotian-liu/LLaVA))
+
+[[SoM-LLaVA-v1.5-13B-HF](https://huggingface.co/zzxslp/som-llava-v1.5-13b-hf)] (model weights converted into HF format)
 
 Two additional models for ablation study:
 
@@ -205,6 +208,33 @@ sh download_ckpt.sh
 ```bash
 python annotate_coco.py
 ```
+
+## :blush: Using LLaVA in HF
+If you would like to load our model in huggingface, here is an example script:
+
+```python
+from PIL import Image
+import requests
+from transformers import AutoProcessor, LlavaForConditionalGeneration
+
+model_path = "zzxslp/som-llava-v1.5-13b-hf"
+
+model = LlavaForConditionalGeneration.from_pretrained(model_path)
+processor = AutoProcessor.from_pretrained(model_path)
+
+prompt = "USER: <image>\nWhat's the content of the image? ASSISTANT:"
+url = "https://www.ilankelman.org/stopsigns/australia.jpg"
+image = Image.open(requests.get(url, stream=True).raw)
+
+inputs = processor(text=prompt, images=image, return_tensors="pt")
+
+# Generate
+generate_ids = model.generate(**inputs, max_new_tokens=20)
+output = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+print (output)
+```
+
+Note: to reproduce the results reported in the paper, we recommend using the LLaVA repo with our [LLaVA-format model](https://huggingface.co/zzxslp/som-llava-v1.5-13b).
 
 ## :cat: Citation
 
