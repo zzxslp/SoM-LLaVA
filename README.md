@@ -90,7 +90,7 @@ We release our main model, SoM-LLaVA trained with LLaVA-665k and SoM-style Listi
 
 [[SoM-LLaVA-v1.5-13B](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] (model weights in original LLaVA format, load and eval with [LLaVA](https://github.com/haotian-liu/LLaVA))
 
-[[SoM-LLaVA-v1.5-13B-HF](https://huggingface.co/zzxslp/som-llava-v1.5-13b-hf)] (model weights converted into HF format)
+[[SoM-LLaVA-v1.5-13B-HF](https://huggingface.co/zzxslp/som-llava-v1.5-13b-hf)] (model weights converted into HF format, see usage [below](#blush-using-llava-in-hf))
 
 Two additional models for ablation study:
 
@@ -234,7 +234,7 @@ output = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up
 print (output)
 ```
 
-Note: to reproduce the results reported in the paper, we recommend using the LLaVA repo with our [LLaVA-format model](https://huggingface.co/zzxslp/som-llava-v1.5-13b).
+Note: to reproduce the results reported in the paper, we recommend using the [official LLaVA repo](https://github.com/haotian-liu/LLaVA) with our [LLaVA-format model](https://huggingface.co/zzxslp/som-llava-v1.5-13b).
 
 ## :cat: Citation
 
