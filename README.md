@@ -116,8 +116,8 @@ We adopt the training code of [LLaVA](https://github.com/haotian-liu/LLaVA). Ple
 
 1. Prepare data
 
-Please download the annotation of the final mixture our instruction tuning data [som_llava_mix695k.json
-](https://huggingface.co/datasets/zzxslp/SoM-LLaVA/resolve/main/som_llava_mix695k.json), and download the images from constituting datasets:
+Please download the annotation of the final mixture of our instruction tuning data [som_llava_mix695k.json
+](https://huggingface.co/datasets/zzxslp/SoM-LLaVA/resolve/main/som_llava_mix695k.json), which is a mixture of llava_mix665k and 30k SoM data, and download the images from the following datasets:
 
 - COCO: [train2017](http://images.cocodataset.org/zips/train2017.zip)
 - COCO: [som_train2017](https://huggingface.co/datasets/zzxslp/SoM-LLaVA/resolve/main/som_train2017.zip)
