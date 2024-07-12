@@ -2,11 +2,12 @@
 *Empowering Open-Source Multimodal LLMs with Set-of-Mark Prompting and Improved Visual Reasoning Ability.*
 
 
-**List Items One by One: A New Data Source and Learning Paradigm for Multimodal LLMs** [[Paper](https://arxiv.org/abs/2404.16375)] [[HF Model](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] <br>
+**[COLM-2024] List Items One by One: A New Data Source and Learning Paradigm for Multimodal LLMs** [[Paper](https://arxiv.org/abs/2404.16375)] [[HF Model](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] <br>
 
 :mega: **Note:** Our new dataset is complementary to existing training sources, add it to your train set and boost your multimodal LLMs with Set-of-Mark prompting and improved general capacity! No cost at inference time!
 
 ## :fire: News
+* [07/10] Our paper is accepted at [COLM-2024](https://colmweb.org), see you in Philly!
 * [04/26] Thanks [AK](https://x.com/_akhaliq/status/1783715007366099318) and [HF daily papers](https://huggingface.co/papers) for featuring our work!
 * [04/25] Our paper is on arxiv! [[Paper](https://arxiv.org/abs/2404.16375)]
 * [04/23] Models and datasets of SoM-LLaVA are released! [[HF Model](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] [[Dataset](https://huggingface.co/datasets/zzxslp/SoM-LLaVA)] 
