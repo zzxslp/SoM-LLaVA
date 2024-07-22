@@ -35,16 +35,25 @@
         <td>MM-VET</td>
     </tr>
     <tr>
-        <td>BLIP-2</td>
-        <td>Vicuna-13B</td>
-        <td>85.3</td>
-        <td>1293.8</td>
-        <td>49.7</td>
-        <td>38.1</td>
-        <td>22.4</td>
+        <td>LLaVA-1.5-7B</td>
+        <td>Vicuna-7B</td>
+        <td> 85.9 </td>
+        <td> 1464.0</td>
+        <td> 64.8 </td>
+        <td> 63.4 </td>
+        <td> 30.5 </td>
+    </tr>   
+    <tr>
+        <td><b>SoM-LLaVA-1.5-7B</b></td>
+        <td>Vicuna-7B</td>
+        <td><b>86.5</b></td>
+        <td><b>1507.0</b></td>
+        <td><b>67.0</b></td>
+        <td><b>66.9</b></td>
+        <td><b>33.3</b></td>
     </tr>
     <tr>
-        <td>LLaVA-1.5</td>
+        <td>LLaVA-1.5-13B</td>
         <td>Vicuna-13B</td>
         <td>85.9</td>
         <td>1531.3</td>
@@ -53,7 +62,7 @@
         <td>35.4</td>
     </tr>
     <tr>
-        <td><b>SoM-LLaVA-1.5<b></td>
+        <td><b>SoM-LLaVA-1.5-13B<b></td>
         <td>Vicuna-13B</td>
         <td><b>86.6</b></td>
         <td><b>1563.1</b></td>
@@ -61,18 +70,13 @@
         <td><b>75.3</b></td>
         <td><b>35.9</b></td>
     </tr>
-    <tr>
-        <td><b>SoM-LLaVA-1.5 w/ tags<b></td>
-        <td>Vicuna-13B</td>
-        <td><b>87.0</b></td>
-        <td><b>1572.8</b></td>
-        <td><b>69.5</b></td>
-        <td><b>73.3</b></td>
-        <td><b>37.2</b></td>
-    </tr>
 </table>
 
-:mega: **Note:** We get 1% to 6% relative improvements on all benchmarks, by simply adding 30k SoM data to the visual instruction tuning stage of LLaVA. SoM-LLaVA-1.5 w/ tags is to feed the model with tagged images, but you can enjoy the performance gain even without the extra visual prompts at test time!
+:mega: **Note:** 
+
+We get 1% to 6% relative improvements on all MLLM benchmarks, by simply adding 30k SoM data to the visual instruction tuning stage of LLaVA. 
+
+You can optionally feed the model with tagged images during inference to boost performance on some benchmarks, but you can enjoy the performance gain with just standard images!
 
 ## :seedling: SoM Dataset 
 [[Training data for SoM-LLaVA](https://huggingface.co/datasets/zzxslp/SoM-LLaVA)]
