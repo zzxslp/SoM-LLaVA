@@ -27,7 +27,7 @@
 <table>
     <tr>
         <td>Method</td>
-        <td>LLM</td>
+        <td>GQA</td>
         <td>POPE</td>
         <td>MME</td>
         <td>SEED-I</td>
@@ -36,7 +36,7 @@
     </tr>
     <tr>
         <td>LLaVA-1.5-7B</td>
-        <td>Vicuna-7B</td>
+        <td>62.0</td>
         <td> 85.9 </td>
         <td> 1464.0</td>
         <td> 64.8 </td>
@@ -45,7 +45,7 @@
     </tr>   
     <tr>
         <td><b>SoM-LLaVA-1.5-7B</b></td>
-        <td>Vicuna-7B</td>
+        <td><b>62.7</b></td>
         <td><b>86.5</b></td>
         <td><b>1507.0</b></td>
         <td><b>67.0</b></td>
@@ -54,7 +54,7 @@
     </tr>
     <tr>
         <td>LLaVA-1.5-13B</td>
-        <td>Vicuna-13B</td>
+        <td>63.3</td>
         <td>85.9</td>
         <td>1531.3</td>
         <td>68.2</td>
@@ -63,7 +63,7 @@
     </tr>
     <tr>
         <td><b>SoM-LLaVA-1.5-13B<b></td>
-        <td>Vicuna-13B</td>
+        <td><b>63.8</b></td>
         <td><b>86.6</b></td>
         <td><b>1563.1</b></td>
         <td><b>69.6</b></td>
