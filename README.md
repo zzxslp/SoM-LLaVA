@@ -93,9 +93,11 @@ som_train2017.zip: A subset of 20k coco images that is annotated with SoM, used 
 ## :cake: Model Checkpoints
 We release our main model, SoM-LLaVA trained with LLaVA-665k and SoM-style Listing + QA data.
 
-[[SoM-LLaVA-v1.5-13B](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] (model weights in original LLaVA format, load and eval with [LLaVA](https://github.com/haotian-liu/LLaVA))
-
 [[SoM-LLaVA-v1.5-13B-HF](https://huggingface.co/zzxslp/som-llava-v1.5-13b-hf)] (model weights converted into HF format, see usage [below](#blush-using-llava-in-hf))
+
+[[SoM-LLaVA-v1.5-7B](https://huggingface.co/zzxslp/som-llava-v1.5-7b)] (model weights in original LLaVA format, load and eval with [LLaVA](https://github.com/haotian-liu/LLaVA))
+
+[[SoM-LLaVA-v1.5-13B](https://huggingface.co/zzxslp/som-llava-v1.5-13b)] (model weights in original LLaVA format, load and eval with [LLaVA](https://github.com/haotian-liu/LLaVA))
 
 Two additional models for ablation study:
 
