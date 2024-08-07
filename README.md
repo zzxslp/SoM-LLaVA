@@ -30,6 +30,7 @@
         <td>GQA</td>
         <td>POPE</td>
         <td>MME</td>
+        <td>MMB</td>
         <td>SEED-I</td>
         <td>LLaVA-Wild</td>
         <td>MM-VET</td>
@@ -39,6 +40,7 @@
         <td>62.0</td>
         <td> 85.9 </td>
         <td> 1464.0</td>
+        <td> 65.4 </td>
         <td> 64.8 </td>
         <td> 63.4 </td>
         <td> 30.5 </td>
@@ -48,6 +50,7 @@
         <td><b>62.7</b></td>
         <td><b>86.5</b></td>
         <td><b>1507.0</b></td>
+        <td><b>66.5</b></td>
         <td><b>67.0</b></td>
         <td><b>66.9</b></td>
         <td><b>33.3</b></td>
@@ -57,6 +60,7 @@
         <td>63.3</td>
         <td>85.9</td>
         <td>1531.3</td>
+        <td> 68.9 </td>
         <td>68.2</td>
         <td>70.7</td>
         <td>35.4</td>
@@ -66,6 +70,7 @@
         <td><b>63.8</b></td>
         <td><b>86.6</b></td>
         <td><b>1563.1</b></td>
+        <td><b>69.5</b></td>
         <td><b>69.6</b></td>
         <td><b>75.3</b></td>
         <td><b>35.9</b></td>
