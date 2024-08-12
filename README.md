@@ -263,5 +263,5 @@ If you find our data or model useful for your research and applications, please 
 
 
 ## :beers: Acknowledgments
-This project is  a collaborative work between UC San Diego and Microsoft GenAI, built on top of [LLaVA](https://github.com/haotian-liu/LLaVA) and [SoM](https://github.com/microsoft/SoM). Thank the authors for their contributions to the community!
+This project is a collaboration between UC San Diego, Microsoft GenAI, and Microsoft Research, built on top of [SoM](https://github.com/microsoft/SoM) and [LLaVA](https://github.com/haotian-liu/LLaVA). Thank the authors for their contributions to the community!
 
