@@ -7,6 +7,7 @@
 :mega: **Note:** Our new dataset is complementary to existing training sources, add it to your train set and boost your multimodal LLMs with Set-of-Mark prompting and improved general capacity! No cost at inference time!
 
 ## :fire: News
+* [08/20] [BLIP-3](https://www.arxiv.org/abs/2408.08872) is out! Our dataset is used in the finetuning stage of BLIP-3 to boost performance!
 * [07/10] Our paper is accepted at [COLM-2024](https://colmweb.org), see you in Philly!
 * [04/26] Thanks [AK](https://x.com/_akhaliq/status/1783715007366099318) and [HF daily papers](https://huggingface.co/papers) for featuring our work!
 * [04/25] Our paper is on arxiv! [[Paper](https://arxiv.org/abs/2404.16375)]
